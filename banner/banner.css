@@ -1,0 +1,21 @@
+.Banner{
+    position: relative;
+}
+.Banner__Heading{
+    color: var(--Color_Light);
+    font-family: var(--FontFamily);
+    font-size: 64px;
+    font-weight: 700;
+
+    text-align: center;
+}
+.Banner__Heading-Wrapper{
+    margin-top: 8px;
+    z-index: 1;
+}
+.Banner__Picture{
+    position: absolute;
+    bottom: 0;
+    max-width: 100dvw;
+    z-index: 0;
+}

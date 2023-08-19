@@ -1,0 +1,17 @@
+:root{
+    --Background: url("images/BackgroundPattern.png") #27262A;
+    --Color_Light: #F6FBFF;
+    --FontFamily: "Raleway";
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.Background{
+    background: var(--Background);
+    background-blend-mode: screen, normal;
+    background-size: 100vh;
+}
+.Section_FullScreen{
+    height: 100dvh;
+}
