@@ -31,7 +31,7 @@
     align-items: center;
 }
 .BannerPicture__Image{
-   width: 150dvw;
+    height: 100%;
 }
 .Banner_ScrollIcon{
     width: 192px;
@@ -48,6 +48,5 @@
 
 @media screen and (min-width: 512px){
     .BannerPicture__Image{
-        width: 120dvw;
     }
 }
