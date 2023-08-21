@@ -1,25 +1,53 @@
 .Banner{
     position: relative;
     overflow: hidden;
+    top:0;
+    height: 100dvh;
+
+    transition: height 50ms ease-in;
 }
 .Banner__Heading{
-    color: var(--Color_Light);
+    color: var(--ColorLight);
     font-family: var(--FontFamily);
     font-size: 164px;
+    line-height: 192px;
     font-weight: 700;
 
     text-align: center;
+
 }
 .Banner__Heading-Wrapper{
-    position: relative;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+}
+.Banner__Heading-Wrapper_Loaded{
+    opacity: 1;
+    transform: translate(-50%);
+    position: fixed;
     top:8px;
     left: 50%;
-    transform: translate(-50%);
-    z-index: 1;
+
+    transition: all ease-in 250ms;
+}
+.Banner__Heading_Unloaded{
+    font-size: 128px;
+    animation: headingLoadingAnimation 1000ms infinite;
+}
+@keyframes headingLoadingAnimation {
+    0%,100%{
+        color: var(--ColorDark);
+    }
+    50%{
+        color: var(--ColorLight);
+    }
 }
 .BannerPicture{
     position: absolute;
     top: 0;
+    transform: translateY(200px);
 
     width: 100%;
     height: 100%;
@@ -32,21 +60,30 @@
 }
 .BannerPicture__Image{
     height: 100%;
+    width: auto;
 }
 .Banner_ScrollIcon{
+    opacity: 1;
     width: 192px;
     height: 192px;
 
     position: absolute;
     bottom:32px;
     right:16px;
+
+    transition: opacity 250ms ease-in;
 }
 .Banner_ScrollIconImage{
     width: 100%;
     height: 100%;
 }
 
-@media screen and (min-width: 512px){
-    .BannerPicture__Image{
+@media screen and (min-width: 1024px){
+    .Banner_ScrollIcon{
+        width: 64px;
+        height: 64px;
+
+        bottom: 64px;
+        right: 64px;
     }
 }

@@ -1,6 +1,7 @@
 :root{
     --Background: url("images/BackgroundPattern.png") #27262A;
-    --Color_Light: #F6FBFF;
+    --ColorLight: #F6FBFF;
+    --ColorDark: #27262A;
     --FontFamily: "Raleway";
 }
 *{
@@ -10,8 +11,40 @@
 .Background{
     background: var(--Background);
     background-blend-mode: screen, normal;
-    background-size: 100vh;
+    background-size: 100dvh;
+
 }
-.Section_FullScreen{
+.Background_Unloaded{
     height: 100dvh;
+    overflow: hidden;
+}
+.PreLoader{
+    opacity: 1;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    z-index: 998;
+    background: #27262A;
+}
+.PreLoader_Loaded{
+    opacity: 0;
+    display: none;
+    animation: loaderFadeOut 1s ease-out;
+}
+@keyframes loaderFadeOut {
+    from{
+        opacity: 1;
+        display: block;
+    }
+
+    to{
+        opacity: 0;
+        display: none;
+    }
+
 }
