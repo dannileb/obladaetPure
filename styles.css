@@ -82,3 +82,12 @@ body{
     }
 
 }
+
+@media (max-width: 512px) {
+    .Content{
+        scrollbar-width: none;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}

@@ -8,10 +8,11 @@
 
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
 .Bio__Heading{
-    font-size: 64px;
+    font-size: 52px;
     font-weight: 700;
 
     color: var(--ColorLight);
@@ -21,7 +22,8 @@
 }
 
 .Bio__Text{
-    font-size: 24px;
+    font-size: 32px;
+    font-weight: 400;
 
     color: var(--ColorLight);
 
@@ -36,36 +38,40 @@
 
 .Bio_Paragraph{
     display: inline-block;
-    margin: 4px 0;
+    margin: 8px 0;
 
     transition: color 250ms ease-in;
 }
 .Bio_Paragraph:hover{
     color: var(--ColorTennisBall);
 }
-.Bio__ImagesContainer{
-    width: 100%;
-    margin: 16px 0;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-}
 
 .Bio__Image{
-    width: 256px;
-    height: 256px;
-    object-fit: contain;
+    margin: 16px 0;
 
-    transition: all 250ms ease-in;
-}
-.Bio__Image_hidden:not(:first-child){
-    opacity: 0;
-}
-.Bio__Image_hidden:first-child{
-    position: absolute;
+    width: 90vw;
 
-    width: 80%;
-    height: auto;
+    transition: width 250ms ease-in;
+}
+.Bio__Image_hidden{
+    width: 100vw;
+}
+
+@media screen and (min-width: 726px){
+    .Bio{
+        justify-content: start;
+    }
+    .Bio__Image{
+        width: 50vw;
+    }
+
+}
+@media screen and (min-width: 1024px){
+    .Bio__Text{
+        font-size: 24px;
+    }
+    .Bio__Image{
+        width: 25vw;
+    }
+
 }
