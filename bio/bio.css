@@ -1,7 +1,5 @@
 .Bio{
     position: relative;
-    padding: 32px 128px;
-
     scroll-snap-align: start;
 
     height: 100dvh;
@@ -22,7 +20,7 @@
 }
 
 .Bio__Text{
-    font-size: 32px;
+    font-size: 42px;
     font-weight: 400;
 
     color: var(--ColorLight);
@@ -56,22 +54,23 @@
 .Bio__Image_hidden{
     width: 100vw;
 }
-
-@media screen and (min-width: 726px){
-    .Bio{
-        justify-content: start;
-    }
-    .Bio__Image{
-        width: 50vw;
-    }
-
-}
-@media screen and (min-width: 1024px){
+@media (min-width: 1024px) {
     .Bio__Text{
         font-size: 24px;
     }
     .Bio__Image{
         width: 25vw;
+    }
+
+}
+
+@media (min-width: 726px) {
+    .Bio{
+        padding: 32px 128px;
+        justify-content: start;
+    }
+    .Bio__Image{
+        width: 50vw;
     }
 
 }
