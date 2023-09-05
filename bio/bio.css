@@ -1,7 +1,10 @@
 .Bio{
-    padding: 32px 16px;
+    position: relative;
+    padding: 32px 128px;
 
     scroll-snap-align: start;
+
+    height: 100dvh;
 
     display: flex;
     flex-direction: column;
@@ -18,22 +21,51 @@
 }
 
 .Bio__Text{
-    margin-top: 32px;
-    font-size: 32px;
+    font-size: 24px;
 
     color: var(--ColorLight);
+
+    transition: opacity 250ms ease-in;
 }
+.Bio__Text:not(:last-child){
+    margin-top: 32px;
+}
+.Bio__Text_hidden{
+    opacity: 0;
+}
+
 .Bio_Paragraph{
     display: inline-block;
-    margin: 8px 0;
+    margin: 4px 0;
+
+    transition: color 250ms ease-in;
+}
+.Bio_Paragraph:hover{
+    color: var(--ColorTennisBall);
 }
 .Bio__ImagesContainer{
-    overflow: hidden;
+    width: 100%;
+    margin: 16px 0;
+
     display: flex;
+    align-items: center;
+    justify-content: space-around;
 
 }
+
 .Bio__Image{
     width: 256px;
     height: 256px;
     object-fit: contain;
+
+    transition: all 250ms ease-in;
+}
+.Bio__Image_hidden:not(:first-child){
+    opacity: 0;
+}
+.Bio__Image_hidden:first-child{
+    position: absolute;
+
+    width: 80%;
+    height: auto;
 }
