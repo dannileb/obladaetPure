@@ -1,12 +1,46 @@
 :root{
     --Background: url("images/BackgroundPattern.png") #27262A;
+
     --ColorLight: #F6FBFF;
     --ColorDark: #27262A;
-    --FontFamily: "Raleway";
+    --ColorTennisBall: #D5F450;
+
+    --FontFamily: Raleway, sans-serif;
 }
 *{
     margin: 0;
     padding: 0;
+}
+body{
+    font-family: var(--FontFamily);
+
+    scrollbar-gutter: stable;
+}
+.Content{
+    height: 100dvh;
+
+    scrollbar-gutter: stable;
+
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+
+    /*Firefox scroll-bar*/
+    scrollbar-width: thin;
+    scrollbar-color: var(--ColorTennisBall) transparent;
+
+}
+::-webkit-scrollbar{
+    width: 8px;
+
+    transition: width 250ms ease-in;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 1px;
+    background: var(--ColorTennisBall);
+}
+::-webkit-scrollbar-track{
+    background: var(--ColorDark);
 }
 .Background{
     background: var(--Background);

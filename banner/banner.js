@@ -1,15 +1,12 @@
 
-
+//banner element
 const banner = document.querySelector(".Banner");
-window.addEventListener("scroll", (event)=>{
 
-})
 window.onload = () => {
     createObserver();
 }
 
-let currentHeightOffset = window.scrollY;
-
+        //loading script
 function createObserver(){
     let observerOptions = {
         root: null,
@@ -19,14 +16,13 @@ function createObserver(){
 
     let observer = new IntersectionObserver((entries, observer)=>{
         entries.forEach(entry => {
+            //when content is loaded
            if(entry.isIntersecting){
+               //show content
                showContent();
-
-               window.addEventListener("scroll", handleScroll);
                document.querySelector(".Banner__Heading-Wrapper_Loaded").style.opacity="1";
            }else
            {
-               window.removeEventListener("scroll", handleScroll);
                document.querySelector(".Banner__Heading-Wrapper_Loaded").style.opacity="0";
            }
 
@@ -36,6 +32,7 @@ function createObserver(){
     observer.observe(banner);
 }
 
+//function that adds classes for hidden elements
 function showContent(){
     const preLoader = document.querySelector(".PreLoader");
     preLoader.classList.add("PreLoader_Loaded");
@@ -43,30 +40,14 @@ function showContent(){
 
     const bannerHeadingWrapper = document.querySelector(".Banner__Heading-Wrapper");
     bannerHeadingWrapper.classList.add("Banner__Heading-Wrapper_Loaded");
+    bannerHeadingWrapper.classList.add("animate__fadeIn");
+    bannerHeadingWrapper.classList.add("animate_slow");
 
     const bannerHeading = document.querySelector(".Banner__Heading");
     bannerHeading.classList.remove("Banner__Heading_Unloaded");
     bannerHeading.classList.add("Banner__Heading_Loaded");
-    bannerHeading.classList.add("animate__fadeInDown");
-    bannerHeading.classList.add("animate__slow");
 
     const page = document.querySelector(".Background");
     page.classList.remove("Background_Unloaded");
 }
 
-function handleScroll(){
-
-    banner.innerHeight=0;
-    let bannerHeight = banner.offsetHeight;
-    let viewPortOffset = window.scrollY;
-
-
-        let heightOffset = 5*(viewPortOffset-currentHeightOffset);
-
-        currentHeightOffset = window.scrollY;
-
-        banner.style.height = `${bannerHeight - heightOffset}px`;
-
-
-
-}

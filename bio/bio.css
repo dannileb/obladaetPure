@@ -1,0 +1,39 @@
+.Bio{
+    padding: 32px 16px;
+
+    scroll-snap-align: start;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Bio__Heading{
+    font-size: 64px;
+    font-weight: 700;
+
+    color: var(--ColorLight);
+}
+.Bio__Heading_shadow_active{
+    text-shadow: 1px 1px 0 var(--ColorTennisBall);
+}
+
+.Bio__Text{
+    margin-top: 32px;
+    font-size: 32px;
+
+    color: var(--ColorLight);
+}
+.Bio_Paragraph{
+    display: inline-block;
+    margin: 8px 0;
+}
+.Bio__ImagesContainer{
+    overflow: hidden;
+    display: flex;
+
+}
+.Bio__Image{
+    width: 256px;
+    height: 256px;
+    object-fit: contain;
+}
