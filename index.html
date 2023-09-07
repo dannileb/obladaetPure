@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="banner/banner.css">
     <link rel="stylesheet" href="bio/bio.css">
+    <link rel="stylesheet" href="slider/slider.css">
+    <link rel="stylesheet" href="homerun/homerun.css">
+    <link rel="stylesheet" href="album.css">
+    <link rel="stylesheet" href="trackList.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -36,7 +40,7 @@
     </section>
     <section class="Bio">
         <h2 class="Bio__Heading">А чё, внатуре обладает?</h2>
-        <p class="Bio__Text Bio__Text_hidden">
+        <p class="Bio__Text">
             <span class="Bio_Paragraph">
                 Псевдоним Назара появился благодаря телесериалу «Спец», где в одном из эпизодов был диалог про карточного шулера с уникальными способностями.
             </span>
@@ -50,7 +54,7 @@
 
         <img src="images/littleObla.png" alt="bioImage" class="Bio__Image Bio__Image_hidden">
 
-        <p class="Bio__Text Bio__Text_hidden">
+        <p class="Bio__Text">
             <span class="Bio_Paragraph">
                 Назар с детства был вовлечен в спорт. В 12-летнем возрасте зачислился в спортивную школу по теннису, параллельно зарабатывая на этом свои первые деньги, а также играл хоккей с мячом и футбол            </span>
             <span class="Bio_Paragraph">
@@ -58,10 +62,71 @@
             </span>
         </p>
     </section>
-    <section style="height: 1900px;">
+    <section class="HomeRun">
+        <h2 class="HomeRun__Heading">HOME RUN</h2>
+        <span class="Date HomeRun__Date">2015</span>
+        <div class="AlbumContent HomeRun_Content">
+            <div class="Slider">
+                <div class="Slider__Wrapper">
+                    <div class="Slider__BlockWrapper">
+                        <div class="Slider__Block">
+                            <img alt="sliderImage" src="images/homeRun.jpg" class="Slider__Image"/>
+                            <p class="Slider__Text">
+                <span class="Slider__Paragraph">
+                    «HOME RUN» — дебютный мини-альбом OBLADAET, релиз которого состоялся в 2015 году.
+                </span>
+                                <span class="Slider__Paragraph">
+                    Назар только прокладывал путь к славе, брезговал публичностью и завоёвывал симпатию слушателей техничным рэпом с колкими панчлайнами.
+                </span>
+                            </p>
+                        </div>
+                        <div class="Slider__Block">
+                            <img alt="sliderImage" src="images/homeRun2.jpg" class="Slider__Image"/>
+                            <p class="Slider__Text">
+            <span class="Slider__Paragraph">
+                На первом EP Назар уходит от  грайм-звучания. На релизе имеется гостевой куплет от Thomas Mraz.
+            </span>
+                                <span class="Slider__Paragraph">
+                Спустя сутки после публикации мини-альбома выходит музыкальный видеоклип на сингл Enter.
+            </span>
+                            </p>
+                        </div>
+                        <div class="Slider__Block">
+                            <img alt="sliderImage" src="images/homeRun3.jpg" class="Slider__Image"/>
+                            <p class="Slider__Text">
+            <span class="Slider__Paragraph">
+                На обложке изображен бейсбольный мяч, а название отсылает на разновидность игровой ситуации.
+            </span>
+                                <span class="Slider__Paragraph">
+                OBLA сидел на трибунах на сквош-турнире и дропал свой первый EP. Записываясь это в домашней студии, в перерывах между соревнованиями.
+            </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Slider__NavBar">
+                    <span class="Slider__Button Slider__Button_active"></span>
+                    <span class="Slider__Button"></span>
+                    <span class="Slider__Button"></span>
+                </div>
+            </div>
+            <div class="TrackList HomeRun__TrackList">
+                <h3 class="TrackList__Heading">TRACK LIST</h3>
+                <ol class="TrackList__TrackWrapper">
+                    <li class="TrackList__Track TrackList__Track_favorite_homerun">ENTER</li>
+                    <li class="TrackList__Track">NO SLEEP</li>
+                    <li class="TrackList__Track TrackList__Track_favorite_homerun">HOME RUN</li>
+                    <li class="TrackList__Track">JUMANJI</li>
+                    <li class="TrackList__Track">GOTHAM CITY</li>
+                </ol>
+                <a href="" class="Link HomeRun_Link">слушать</a>
+            </div>
+        </div>
     </section>
 </div>
 <script src="banner/banner.js"></script>
 <script src="bio/bio.js"></script>
+<script src="slider/slider.js"></script>
 </body>
 </html>

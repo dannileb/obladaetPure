@@ -19,8 +19,6 @@ body{
 .Content{
     height: 100dvh;
 
-    scrollbar-gutter: stable;
-
     overflow-y: scroll;
     scroll-snap-type: y proximity;
 

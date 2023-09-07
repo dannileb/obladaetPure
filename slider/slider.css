@@ -1,0 +1,85 @@
+@import "../styles.css";
+
+
+.Slider{
+    max-width: 100%;
+
+    overflow: hidden;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Slider__Wrapper{
+    width: 100%;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+
+}
+.Slider__Wrapper::-webkit-scrollbar{
+    display: none;
+}
+.Slider__BlockWrapper{
+    display: flex;
+    gap: 8px;
+
+    transition: transform 250ms ease-in;
+}
+.Slider__Block{
+    max-width: 100%;
+
+    scroll-snap-align: center;
+
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.Slider__Image{
+    margin: 64px 0;
+    width: 256px;
+    height: 256px;
+
+    object-fit: cover;
+}
+.Slider__Text{
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 120%;
+}
+.Slider__Paragraph{
+    display: inline-block;
+    margin: 8px 0;
+}
+.Slider__NavBar{
+    margin-top: 32px;
+
+    display: flex;
+    align-items: center;
+}
+.Slider__Button{
+    cursor: pointer;
+
+    margin: 0 8px;
+    width: 64px;
+    height: 8px;
+    background: #C4C6C9;
+
+    transition: background-color 250ms ease-in;
+}
+.Slider__Button_active{
+    background: var(--ColorDark);
+}
+
+@media (min-width: 1024px){
+    .Slider__Text{
+        font-size: ;
+    }
+}

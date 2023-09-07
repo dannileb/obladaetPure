@@ -1,0 +1,17 @@
+.HomeRun{
+    padding: 128px;
+
+    background: #FFFFFF;
+}
+.HomeRun__Heading{
+    font-size: 96px;
+    font-weight: 700;
+
+    color: var(--ColorDark);
+}
+.HomeRun__Date{
+    margin-top: 16px;
+    font-size: 48px;
+    font-weight: 300;
+
+}

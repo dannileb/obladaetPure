@@ -2,8 +2,6 @@
     position: relative;
     scroll-snap-align: start;
 
-    height: 100dvh;
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -20,7 +18,7 @@
 }
 
 .Bio__Text{
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 400;
 
     color: var(--ColorLight);

@@ -36,17 +36,11 @@ function showBioContent(){
         images.forEach((image)=>{
             image.classList.remove("Bio__Image_hidden")
         })
+        text.forEach((textEl)=>{
+            textEl.classList.remove("Bio__Text_hidden")
+        })
 
-        setTimeout(()=>{
-
-            text.forEach((textEl)=>{
-                textEl.classList.remove("Bio__Text_hidden")
-            })
-
-            heading.classList.remove("Bio__Heading_shadow_active")
-
-            //after 500ms
-        }, 250)
+        heading.classList.remove("Bio__Heading_shadow_active")
 
         //after 500ms
     }, 250)
