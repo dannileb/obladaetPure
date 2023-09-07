@@ -36,3 +36,32 @@
 .HomeRun_Link, .HomeRun_Link:visited{
     color: var(--ColorDark);
 }
+
+@media (min-width: 1024px) {
+    .TrackList__Heading {
+        font-size: 24px;
+    }
+    .TrackList__Track {
+        font-size: 16px;
+    }
+    .Link{
+        font-size: 16px;
+    }
+    .TrackList__TrackWrapper{
+        gap: 16px;
+    }
+}
+@media (min-width: 1190px) {
+    .TrackList__Heading {
+        font-size: 32px;
+    }
+    .TrackList__Track {
+        font-size: 24px;
+    }
+    .Link{
+        font-size: 24px;
+    }
+    .TrackList__TrackWrapper{
+        gap: 16px;
+    }
+}

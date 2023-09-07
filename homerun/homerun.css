@@ -15,3 +15,22 @@
     font-weight: 300;
 
 }
+
+@media (min-width: 1024px) {
+    .HomeRun__Heading{
+        font-size: 64px;
+    }
+    .HomeRun__Date {
+        font-size: 32px;
+    }
+}
+@media (min-width: 1190px) {
+    .HomeRun{
+        padding: 64px;
+    }
+}
+@media (min-width: 1366px) {
+    .HomeRun{
+        padding: 128px;
+    }
+}

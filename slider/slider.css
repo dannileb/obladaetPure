@@ -79,7 +79,45 @@
 }
 
 @media (min-width: 1024px){
+    .Slider__Image {
+        margin: 16px 0;
+        width: 128px;
+        height: 128px;
+    }
+
     .Slider__Text{
-        font-size: ;
+        font-size: 16px;
+    }
+
+    .Slider__Button{
+        width: 32px;
+        height: 4px;
+    }
+    .Slider__NavBar{
+        margin-top: 16px;
+    }
+}
+
+@media (min-width: 1190px){
+    .Slider__Text {
+        font-size: 24px;
+    }
+    .Slider__Image {
+        margin: 8px 0;
+        width: 196px;
+        height: 196px;
+    }
+    .Slider__Button{
+        width: 64px;
+        height: 8px;
+    }
+}
+@media (min-width: 1536px) {
+    .Slider__Text {
+        font-size: 26px;
+    }
+    .Slider__Image {
+        width: 256px;
+        height: 256px;
     }
 }
