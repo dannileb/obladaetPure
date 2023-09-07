@@ -1,4 +1,5 @@
 .HomeRun{
+    position: relative;
     padding: 128px;
 
     background: #FFFFFF;
@@ -8,20 +9,45 @@
     font-weight: 700;
 
     color: var(--ColorDark);
+
+    transition: font-size 250ms ease-in;
+}
+.HomeRun__Heading_unload{
+    text-align: center;
+    font-size: 128px;
+}
+.HomeRun__Image{
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    transform: translate(-50%);
+
+    width: 80%;
+    height: auto;
+
+    transition: opacity 250ms ease-in;
 }
 .HomeRun__Date{
     margin-top: 16px;
     font-size: 48px;
     font-weight: 300;
 
-}
+    transition: opacity 250ms ease-in;
 
+}
 @media (min-width: 1024px) {
     .HomeRun__Heading{
         font-size: 64px;
     }
+    .HomeRun__Heading_unload{
+        font-size: 128px;
+    }
     .HomeRun__Date {
         font-size: 32px;
+    }
+    .HomeRun__Image{
+        height: 50%;
+        width: auto;
     }
 }
 @media (min-width: 1190px) {

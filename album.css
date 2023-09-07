@@ -6,6 +6,8 @@
     align-items: center;
 
     gap: 64px;
+
+    transition: opacity 250ms ease-in;
 }
 @media (min-width: 1024px){
     .HomeRun_Content{

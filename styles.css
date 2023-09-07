@@ -27,6 +27,12 @@ body{
     scrollbar-color: var(--ColorTennisBall) transparent;
 
 }
+.loaded{
+    opacity: 1;
+}
+.unload{
+    opacity: 0;
+}
 ::-webkit-scrollbar{
     width: 8px;
 
