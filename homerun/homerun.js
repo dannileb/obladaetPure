@@ -31,17 +31,20 @@ createHomeRunObserver();
 
 function showHomeRunContent(){
     heading.classList.remove("HomeRun__Heading_unload");
-    date.classList.remove("unload")
-    content.classList.remove("unload")
-    coverImage.classList.remove("loaded")
-    coverImage.classList.add("unload")
+
+    date.classList.remove("unloaded");
+
+    content.classList.remove("unloaded");
+
+    coverImage.classList.remove("loaded");
+    coverImage.classList.add("unloaded");
 }
 function hideHomeRunContent(){
     heading.classList.add("HomeRun__Heading_unload");
 
-    date.classList.add("unload")
-    content.classList.add("unload")
+    date.classList.add("unloaded");
+    content.classList.add("unloaded");
 
-    coverImage.classList.add("loaded")
-    coverImage.classList.remove("unload")
+    coverImage.classList.add("loaded");
+    coverImage.classList.remove("unloaded");
 }

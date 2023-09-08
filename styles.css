@@ -20,7 +20,7 @@ body{
     height: 100dvh;
 
     overflow-y: scroll;
-    scroll-snap-type: y proximity;
+    //scroll-snap-type: y proximity;
 
     /*Firefox scroll-bar*/
     scrollbar-width: thin;
@@ -30,7 +30,7 @@ body{
 .loaded{
     opacity: 1;
 }
-.unload{
+.unloaded{
     opacity: 0;
 }
 ::-webkit-scrollbar{

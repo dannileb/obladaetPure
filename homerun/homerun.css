@@ -2,20 +2,26 @@
     position: relative;
     padding: 128px;
 
+    scroll-snap-align: center;
+
     background: #FFFFFF;
+
+    transition: allign-items 250ms ease-in;
 }
+
 .HomeRun__Heading{
     font-size: 96px;
     font-weight: 700;
 
     color: var(--ColorDark);
 
-    transition: font-size 250ms ease-in;
+    transition: all 250ms ease-in;
 }
 .HomeRun__Heading_unload{
-    text-align: center;
     font-size: 128px;
+
 }
+
 .HomeRun__Image{
     position: absolute;
     top: 380px;
@@ -26,6 +32,7 @@
     height: auto;
 
     transition: opacity 250ms ease-in;
+    transition-delay: 50ms;
 }
 .HomeRun__Date{
     margin-top: 16px;
@@ -33,6 +40,7 @@
     font-weight: 300;
 
     transition: opacity 250ms ease-in;
+    transition-delay: 250ms;
 
 }
 @media (min-width: 1024px) {

@@ -4,8 +4,6 @@ const sliderButtons = Array.from(document.querySelectorAll(".Slider__Button"));
 
 const  sliderBlocks = Array.from(document.querySelectorAll(".Slider__Block"));
 
-const blocksNumber = sliderBlocks.length;
-
 //one block width
 const blockWidth = sliderBlocks[0].offsetWidth;
 
@@ -17,7 +15,6 @@ sliderButtons.forEach((button)=>{
         //the block where we need to scroll
         const pointBlock = sliderButtons.indexOf(button)
 
-        console.log(pointBlock)
         //scroll to the block
         sliderWrapper.scrollLeft = pointBlock*blockWidth;
 
