@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="homerun/homerun.css">
     <link rel="stylesheet" href="album.css">
     <link rel="stylesheet" href="trackList.css">
+    <link rel="stylesheet" href="doubletap/doubletap.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -62,15 +63,15 @@
             </span>
         </p>
     </section>
-    <section class="HomeRun">
+    <section class="Album HomeRun">
 
-        <h2 class="HomeRun__Heading_unloaded HomeRun__Heading">HOME RUN</h2>
+        <h2 class="HomeRun__Heading_unloaded Album__Heading HomeRun__Heading">HOME RUN</h2>
         <span class="unloaded Date HomeRun__Date">2015</span>
-        <div class="unloaded AlbumContent HomeRun_Content">
+        <div class="unloaded HomeRun__Content Album__Content">
             <div class="Slider">
-                <div class="Slider__Wrapper">
+                <div class="Slider__Wrapper HomeRun__SliderWrapper">
                     <div class="Slider__BlockWrapper">
-                        <div class="Slider__Block">
+                        <div class="Slider__Block HomeRun__SliderBlock">
                             <img alt="sliderImage" src="images/homeRun.jpg" class="Slider__Image"/>
                             <p class="Slider__Text">
                 <span class="Slider__Paragraph">
@@ -81,7 +82,7 @@
                 </span>
                             </p>
                         </div>
-                        <div class="Slider__Block">
+                        <div class="Slider__Block HomeRun__SliderBlock">
                             <img alt="sliderImage" src="images/homeRun2.jpg" class="Slider__Image"/>
                             <p class="Slider__Text">
             <span class="Slider__Paragraph">
@@ -92,7 +93,7 @@
             </span>
                             </p>
                         </div>
-                        <div class="Slider__Block">
+                        <div class="Slider__Block HomeRun__SliderBlock">
                             <img alt="sliderImage" src="images/homeRun3.jpg" class="Slider__Image"/>
                             <p class="Slider__Text">
             <span class="Slider__Paragraph">
@@ -107,9 +108,9 @@
                 </div>
 
                 <div class="Slider__NavBar">
-                    <span class="Slider__Button Slider__Button_active"></span>
-                    <span class="Slider__Button"></span>
-                    <span class="Slider__Button"></span>
+                    <span class="Slider__Button Slider__Button_active HomeRun__SliderButton"></span>
+                    <span class="Slider__Button HomeRun__SliderButton"></span>
+                    <span class="Slider__Button HomeRun__SliderButton"></span>
                 </div>
             </div>
             <div class="TrackList HomeRun__TrackList">
@@ -124,7 +125,82 @@
                 <a href="" class="Link HomeRun_Link">слушать</a>
             </div>
         </div>
-        <img alt="sliderImage" src="images/homeRun.jpg" class="loaded HomeRun__Image"/>
+        <img alt="sliderImage" src="images/homeRun.jpg" class="loaded Album__Image HomeRun__Image"/>
+
+    </section>
+    <section class="Album DoubleTap">
+
+        <h2 class="DoubleTap__Heading_unloaded Album__Heading DoubleTap__Heading">DOUBLE TAP</h2>
+
+        <span class="Date DoubleTap__Date">2016</span>
+
+        <div class="Album__Content DoubleTap__Content">
+            <div class="Slider">
+                <div class="Slider__Wrapper DoubleTap__SliderWrapper">
+                    <div class="Slider__BlockWrapper">
+
+                        <div class="Slider__Block DoubleTap__SliderBlock">
+                            <img alt="sliderImage" src="images/doubleTap.jpg" class="Slider__Image"/>
+                            <p class="Slider__Text">
+                                <span class="Slider__Paragraph">
+                                    Свой первый полноценный альбом Назар выпустил в 2016 году.
+                                    "DOUBLE TAP" - альбом, полный киберпанковыми песнями и пропитанный духом нашей реальности.
+                                </span>
+                                <span class="Slider__Paragraph">
+                                    Мощные сольные треки разбавили фиты с Krestall / Kidd, ATL, Illumate и Miriam
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="Slider__Block DoubleTap__SliderBlock">
+                            <img alt="sliderImage" src="images/doubleTap2.jpg" class="Slider__Image"/>
+                            <p class="Slider__Text">
+                                <span class="Slider__Paragraph">
+                                    "DOUBLE TAP" - показательный проект.
+                                    К релизу OBLADAET подходил в статусе перспективного новичка на которого возлагались
+                                    большие надежды вследствие удачных участий в грайм-баттлах и релиза нетривиального EP "HOME RUN".
+                                </span>
+                            </p>
+                        </div>
+
+
+                        <div class="Slider__Block DoubleTap__SliderBlock">
+                            <img alt="sliderImage" src="images/doubleTap3.jpg" class="Slider__Image"/>
+                            <p class="Slider__Text">
+                                <span class="Slider__Paragraph">
+                                    Атмосферу киберпанкового мира, на фоне которой OBLA рассказывает свои истории из обычной реальности.
+                                </span>
+                                <span class="Slider__Paragraph">
+                                    Под простым построением текста скрывается глубина смысла,
+                                    двойные смыслы, не зря альбом называется “DOUBLE TAP”.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Slider__NavBar">
+                    <span class="Slider__Button Slider__Button_active DoubleTap__SliderButton"></span>
+                    <span class="Slider__Button DoubleTap__SliderButton"></span>
+                    <span class="Slider__Button DoubleTap__SliderButton"></span>
+                </div>
+            </div>
+            <div class="TrackList">
+                <h3 class="TrackList__Heading">TRACK LIST</h3>
+                <ol class="TrackList__TrackWrapper TrackList__TrackWrapper_layout_grid">
+                    <li class="TrackList__Track">TIMELAPSE / MASK</li>
+                    <li class="TrackList__Track TrackList__Track_favorite_doubletap">00:00</li>
+                    <li class="TrackList__Track">DOWNSHIFTING</li>
+                    <li class="TrackList__Track TrackList__Track_favorite_doubletap">FASHION TV </li>
+                    <li class="TrackList__Track">UNIVERSE</li>
+                    <li class="TrackList__Track">RIDIN'</li>
+                    <li class="TrackList__Track">I DON'T TRUST'</li>
+                    <li class="TrackList__Track TrackList__Track_favorite_doubletap">DOUBLE TAP</li>
+                </ol>
+                <a href="" class="Link HomeRun_Link">слушать</a>
+            </div>
+        </div>
+
+        <img alt="sliderImage" src="images/doubleTap.jpg" class="unloaded Album__Image DoubleTap__Image"/>
 
     </section>
 </div>

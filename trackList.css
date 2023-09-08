@@ -19,16 +19,27 @@
 
     gap: 32px;
 }
+.TrackList__TrackWrapper_layout_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
 .TrackList__Track{
     font-size: 32px;
     font-weight: 400;
 
     text-align: center;
 }
+.TrackList__TrackWrapper_layout_grid .TrackList__Track{
+    align-self: start;
+    justify-self: center;
+}
 .TrackList__Track_favorite_homerun{
     text-shadow: 0 4px 12px var(--ColorDark);
 }
-
+.TrackList__Track_favorite_doubletap{
+    text-shadow: 0 1px 4px #D5F450;
+}
 .Link{
     font-size: 32px;
     font-weight: 500;

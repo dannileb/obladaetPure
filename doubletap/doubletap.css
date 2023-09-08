@@ -1,0 +1,11 @@
+.DoubleTap{
+    color: var(--ColorLight);
+
+    background: #0B0C0E;
+}
+.DoubleTap .Link{
+    color: var(--ColorLight);
+}
+.DoubleTap .Slider__Button_active{
+    background: var(--ColorTennisBall);
+}

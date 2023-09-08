@@ -1,7 +1,7 @@
 const homeRun = document.querySelector(".HomeRun");
 const heading = document.querySelector(".HomeRun__Heading");
 const date = document.querySelector(".HomeRun__Date");
-const content = document.querySelector(".HomeRun_Content");
+const content = document.querySelector(".HomeRun__Content");
 const coverImage = document.querySelector(".HomeRun__Image");
 
 function createHomeRunObserver(){

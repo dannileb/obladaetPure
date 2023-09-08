@@ -1,42 +1,60 @@
-const sliderWrapper = document.querySelector(".Slider__Wrapper");
+class Slider{
 
-const sliderButtons = Array.from(document.querySelectorAll(".Slider__Button"));
+    constructor(sliderWrapper, sliderBlocks, sliderButtons) {
 
-const  sliderBlocks = Array.from(document.querySelectorAll(".Slider__Block"));
+        this.currentBlock =0;
 
-//one block width
-const blockWidth = sliderBlocks[0].offsetWidth;
+        this.sliderWrapper = sliderWrapper;
+        this.sliderBlocks = sliderBlocks;
+        this.sliderButtons = sliderButtons;
 
-let currentBlock = 0;
+        this.blockWidth = this.sliderBlocks[0].offsetWidth;
 
-//slider on buttons
-sliderButtons.forEach((button)=>{
-    button.addEventListener("click", ()=>{
-        //the block where we need to scroll
-        const pointBlock = sliderButtons.indexOf(button)
+        //slider on buttons
+        this.sliderButtons.forEach((button) =>{
+            button.addEventListener("click", ()=>{
+                //the block where we need to scroll
+                const pointBlock = this.sliderButtons.indexOf(button)
 
-        //scroll to the block
-        sliderWrapper.scrollLeft = pointBlock*blockWidth;
+                //scroll to the block
+                this.sliderWrapper.scrollLeft = pointBlock*this.blockWidth;
 
-        //changing nav buttons styles
-        changeButtons(pointBlock);
+                //changing nav buttons styles
+                changeButtons(pointBlock, this.currentBlock, this.sliderButtons);
 
-    })
-})
+                this.currentBlock=pointBlock;
+            })
+        })
 
-//slider on drag
-sliderWrapper.addEventListener("touchend", (event)=>{
-    //changing nav buttons styles
-    changeButtons(Math.round(sliderWrapper.scrollLeft/blockWidth))
-})
+        //slider on drag
+        this.sliderWrapper.addEventListener("touchend", (event)=>{
+            //changing nav buttons styles
+            changeButtons(Math.round(sliderWrapper.scrollLeft/this.blockWidth),this.currentBlock, this.sliderButtons)
+        })
+    }
+
+}
+
+const homeRunSlider = new Slider(
+    document.querySelector(".HomeRun__SliderWrapper"),
+    Array.from(document.querySelectorAll(".HomeRun__SliderBlock")),
+    Array.from(document.querySelectorAll(".HomeRun__SliderButton"))
+
+)
+
+const doubleTapSlider = new Slider(
+    document.querySelector(".DoubleTap__SliderWrapper"),
+    Array.from(document.querySelectorAll(".DoubleTap__SliderBlock")),
+    Array.from(document.querySelectorAll(".DoubleTap__SliderButton"))
+
+)
+
 
 //function that changes styles on active button
-function changeButtons(pointBlock){
+function changeButtons(pointBlock, currentBlock, sliderButtons){
 
     //remove active button classes
     sliderButtons[currentBlock].classList.remove("Slider__Button_active");
     sliderButtons[pointBlock].classList.add("Slider__Button_active");
 
-    //switch current and point blocks
-    currentBlock=pointBlock;
 }

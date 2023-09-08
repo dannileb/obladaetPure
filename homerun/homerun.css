@@ -1,29 +1,18 @@
 .HomeRun{
-    position: relative;
-    padding: 128px;
-
     scroll-snap-align: center;
-
     background: #FFFFFF;
-
-    transition: allign-items 250ms ease-in;
 }
 
 .HomeRun__Heading{
-    font-size: 96px;
-    font-weight: 700;
-
     color: var(--ColorDark);
 
-    transition: all 250ms ease-in;
 }
+
 .HomeRun__Heading_unload{
     font-size: 128px;
-
 }
 
 .HomeRun__Image{
-    position: absolute;
     top: 380px;
     left: 50%;
     transform: translate(-50%);
@@ -31,40 +20,16 @@
     width: 80%;
     height: auto;
 
-    transition: opacity 250ms ease-in;
-    transition-delay: 50ms;
-}
-.HomeRun__Date{
-    margin-top: 16px;
-    font-size: 48px;
-    font-weight: 300;
-
-    transition: opacity 250ms ease-in;
-    transition-delay: 250ms;
-
 }
 @media (min-width: 1024px) {
-    .HomeRun__Heading{
-        font-size: 64px;
+    .HomeRun__Content{
+        flex-direction: row-reverse;
     }
     .HomeRun__Heading_unload{
         font-size: 128px;
     }
-    .HomeRun__Date {
-        font-size: 32px;
-    }
     .HomeRun__Image{
         height: 50%;
         width: auto;
-    }
-}
-@media (min-width: 1190px) {
-    .HomeRun{
-        padding: 64px;
-    }
-}
-@media (min-width: 1366px) {
-    .HomeRun{
-        padding: 128px;
     }
 }

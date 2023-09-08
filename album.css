@@ -1,4 +1,9 @@
-.AlbumContent{
+.Album{
+    position: relative;
+    padding: 128px;
+
+}
+.Album__Content{
     width: 100%;
     margin-top: 32px;
 
@@ -11,8 +16,46 @@
     transition: opacity 250ms ease-in;
     transition-delay: 250ms;
 }
-@media (min-width: 1024px){
-    .HomeRun_Content{
+.Album__Image{
+    position: absolute;
+
+    transition: opacity 250ms ease-in;
+    transition-delay: 50ms;
+}
+.Album__Heading{
+
+    font-size: 96px;
+    font-weight: 700;
+
+    transition: all 250ms ease-in;
+}
+.Date{
+    margin-top: 16px;
+    font-size: 48px;
+    font-weight: 300;
+
+    transition: opacity 250ms ease-in;
+    transition-delay: 250ms;
+}
+
+@media (min-width: 1024px) {
+    .Album__Content{
         flex-direction: row-reverse;
+    }
+    .Album__Heading{
+        font-size: 64px;
+    }
+    .Date {
+        font-size: 32px;
+    }
+}
+@media (min-width: 1190px) {
+    .Album{
+        padding: 64px;
+    }
+}
+@media (min-width: 1366px) {
+    .Album{
+        padding: 128px;
     }
 }
